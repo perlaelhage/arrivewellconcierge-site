@@ -1,0 +1,18 @@
+@font-face{font-family:'Gilda Display';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/gilda-display.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/hanken-grotesk.woff2) format('woff2')}
+body{margin:0;background:#efe9dd}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+[hidden]{display:none!important}
+.aw-skip{position:absolute;left:-9999px;background:#1f3d33;color:#efe9dd;padding:12px 16px;font-family:'Hanken Grotesk',Arial,sans-serif;z-index:20}
+.aw-skip:focus{left:8px;top:8px}
+.aw-inline,.aw-burger,.aw-menu,.aw-notsent,.aw-sent{display:contents}
+.aw-inline{display:none}
+@media (min-width:1100px){
+  .aw-inline{display:contents}
+  .aw-burger,.aw-menu{display:none}
+}
+.aw-wa{position:fixed;right:16px;bottom:16px;z-index:10;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:10px 16px;box-sizing:border-box;background:#1f3d33;color:#efe9dd;border:1px solid #efe9dd;border-radius:24px;font:600 15px 'Hanken Grotesk',Arial,sans-serif;text-decoration:none}
+@media print{
+  header,footer,.aw-skip,.aw-wa{display:none!important}
+}
