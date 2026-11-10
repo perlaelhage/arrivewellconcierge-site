@@ -13,6 +13,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
   .aw-burger,.aw-menu{display:none}
 }
 .aw-wa{position:fixed;right:16px;bottom:16px;z-index:10;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:10px 16px;box-sizing:border-box;background:#1f3d33;color:#efe9dd;border:1px solid #efe9dd;border-radius:24px;font:600 15px 'Hanken Grotesk',Arial,sans-serif;text-decoration:none}
+/* Mobile : retour a la ligne garanti (10/11/2026). Sans effet au-dessus de 559 px. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (max-width:559px){
+  [style*="minmax(min(100%, 240px)"],[style*="minmax(min(100%, 300px)"],[style*="minmax(min(100%, 320px)"],[style*="minmax(min(100%, 340px)"]{grid-template-columns:minmax(0,1fr)!important}
+  [style*="grid-template-columns"]>*{min-width:0}
+  main p,main li,main h1,main h2,main h3,main a,main dd,main dt,footer p,footer a{overflow-wrap:break-word}
+  main img,footer img{max-width:100%}
+}
 @media print{
   header,footer,.aw-skip,.aw-wa{display:none!important}
 }
